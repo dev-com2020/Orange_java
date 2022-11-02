@@ -8,11 +8,8 @@ public class Typy {
         int multi = x * y; // mnożenie
         double div = (double) x / y; // dzielenie całkowitoliczbowe
         int mod = x % y;
-        x += 5;
-        x -= 5;
-        x *= 5;
-        x /= 5;
-        x %= 5;
+
+
         System.out.println(sum);
         System.out.println(sub);
         System.out.println(multi);
