@@ -1,9 +1,9 @@
 public class ComputerFactory {
 
-    Computer create(String procesor, int memory) {
-        Computer computer = new Computer();
-        computer.procesor = procesor;
-        computer.memory = memory;
-        return computer;
-    }
+//    Computer create(String procesor, int memory) {
+//        Computer computer = new Computer();
+//        computer.procesor = procesor;
+//        computer.memory = memory;
+//        return computer;
+//    }
 }
