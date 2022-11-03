@@ -15,6 +15,14 @@ public class Car {
         return color;
     }
 
+    public void setYear(int year) {
+        if (year > 2000) {
+            this.year = year;
+        } else {
+            System.out.println("Auto musi być nowsze!");
+        }
+    }
+
 
     // konstruktor1
     public Car(int year, String brand, String model, String color) {
@@ -28,7 +36,8 @@ public class Car {
         this.brand = brand;
         this.model = model;
     }
-    public void print(){
+
+    public void print() {
         System.out.println(brand + " " + model + " " + year + " " + color);
     }
 }
