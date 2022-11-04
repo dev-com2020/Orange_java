@@ -21,12 +21,11 @@ public class Test {
                 System.out.println("Którą wartość wyświetlić(1 lub 2)");
                 System.out.println("Liczba: " + numbers[sc.nextInt() - 1]);
                 error = false;
-            } catch (InputMismatchException e) {
+            } catch (Exception e) {
+//            } catch (InputMismatchException | ArrayIndexOutOfBoundsException e) {
                 System.err.println("Podana wartość jest nieprawidłowa! Spróbuj jeszcze raz...");
-                sc.nextLine();
-//            e.printStackTrace();
-            } catch (ArrayIndexOutOfBoundsException e){
-                System.out.println("Miało być 1 albo 2!!!,zacznijmy od nowa!");
+                e.printStackTrace();
+            } finally {
                 sc.nextLine();
             }
         } while (error);

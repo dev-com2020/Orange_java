@@ -13,6 +13,19 @@ class CarShop {
         audiA4.print();
         String audiA4color = audiA4.getColor();
         System.out.println(audiA4color);
+        try {
+            audiA5.refuel(40);
+        } catch (Exception e){
+            System.err.println(e.getMessage());
+        }
+        System.out.println(audiA5);
+        try {
+            audiA5.drive();
+        } catch (IllegalStateException e){
+            System.err.println(e.getMessage());
+        }
+
+        System.out.println(audiA5);
 
     }
 }
